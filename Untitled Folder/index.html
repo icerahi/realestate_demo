@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Immolists</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Bluesky template project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/properties.css">
+<link rel="stylesheet" type="text/css" href="styles/properties_responsive.css">
+
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+
+	<header class="default-header">
+				 
+
+				<nav class="navbar fixed-top navbar-expand-lg  navbar-light bg-light">
+					<div class="container">
+						  <a class="navbar-brand" href="index.html">
+						  	<img height="50" width="150" src="images/immo.png" alt="">
+						  </a>
+						  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						    <span class="navbar-toggler-icon"></span>
+						  </button>
+
+						  <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
+						    <ul class="navbar-nav">
+						    	<li><a href="index.html">Home</a></li>
+						    	<li><a href="properties.html">Properties</a></li>
+						    	<li><a href="realestators.html">RealEstators</a></li>
+						    	
+
+						    <li><a  href='' data-toggle="modal" data-target="#login">Login</a></li>
+							<li><a  href='' data-toggle="modal" data-target="#register">Register</a></li>
+						 							<div>
+										<select class="search_form_select">
+											<option disabled selected>Language</option>
+											<option>English</option>
+											<option>Arabic</option>
+											<option>Frainces</option>
+										 
+										</select>
+									</div> 
+
+								
+						    </ul>
+						  </div>						
+					</div>
+				</nav>
+
+				<!-- Login modal-->
+				<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="login">Login </h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				      	<form>
+				      		<input type="email" name="email" class='form-control' placeholder="Email"> <br>
+				      		<input type="password" name="email" class='form-control' placeholder="Password">
+				      	</form>
+				        
+				      </div>
+				      <div class="modal-footer">
+				       
+				        <button type="button" class="btn btn-primary">Login</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+				<!-- register modal-->
+				<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="register">Create a New Account</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				        <form>
+				        	<input type="text" name="fullname" placeholder="Fullname" class="form-control"> <br>
+				        	<input type="text" name="username" placeholder="Username" class="form-control"> <br>
+				        	<input type="text" name="profession" placeholder="Profession" class="form-control"> <br>
+				        	<input type="email" name="email" placeholder="email" class="form-control"> <br>
+				        	<input type="password" name="password" placeholder="Password" class="form-control"> <br>
+				        	<input type="password" name="password" placeholder="Confirm Password" class="form-control"> <br>
+				        </form>
+				      </div>
+				      <div class="modal-footer">
+				       
+				        <button type="button" class="btn btn-primary">Register</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+
+			</header>
+
+	<!-- Menu -->
+
+
+
+
+
+
+	<div class="menu trans_500">
+		<div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
+			<div class="menu_close_container"><div class="menu_close"></div></div>
+			<div class="logo menu_logo">
+				<a href="#">
+					<div class="logo_container d-flex flex-row align-items-start justify-content-start">
+						<div class="logo_image"><div><img src="images/logo.png" alt=""></div></div>
+					</div>
+				</a>
+			</div>
+			 
+		</div>
+ 	</div>
+	
+	<!-- Home -->
+
+	<div class="home">
+
+		<!-- Home Slider -->
+		<div class="home_slider_container">
+			<div class="owl-carousel owl-theme home_slider">
+				
+				<!-- Slide -->
+				<div class="owl-item">
+					<div class="home_slider_background" style="background-image:url(images/home_slider_1.jpg)"></div>
+					<div class="slide_container">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<div class="slide_content">
+										<div class="home_subtitle">Create Account in <span> ImmoLists  </span>and</div>
+										 
+										<div class="home_title">Find or Lists your Own Dream Property </div>
+											 
+
+										 
+										
+										 
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Slide -->
+				<div class="owl-item">
+					<div class="home_slider_background" style="background-image:url(images/home_slider_1.jpg)"></div>
+					<div class="slide_container">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<div class="slide_content">
+										<div class="home_subtitle">super offer</div>
+										<div class="home_title">Villa with sea view</div>
+										<div class="home_details">
+											<ul class="home_details_list d-flex flex-row align-items-center justify-content-start">
+												<li>
+													<div class="home_details_image"><img src="images/icon_1.png" alt=""></div>
+													<span> 650 Ftsq</span>
+												</li>
+												<li>
+													<div class="home_details_image"><img src="images/icon_2.png" alt=""></div>
+													<span> 3 Bedrooms</span>
+												</li>
+												<li>
+													<div class="home_details_image"><img src="images/icon_3.png" alt=""></div>
+													<span> 2 Bathrooms</span>
+												</li>
+											</ul>
+										</div>
+										<div class="home_price">$ 1. 245 999</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Slide -->
+				<div class="owl-item">
+					<div class="home_slider_background" style="background-image:url(images/home_slider_1.jpg)"></div>
+					<div class="slide_container">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<div class="slide_content">
+										<div class="home_subtitle">super offer</div>
+										<div class="home_title">Villa with sea view</div>
+										<div class="home_details">
+											<ul class="home_details_list d-flex flex-row align-items-center justify-content-start">
+												<li>
+													<div class="home_details_image"><img src="images/icon_1.png" alt=""></div>
+													<span> 650 Ftsq</span>
+												</li>
+												<li>
+													<div class="home_details_image"><img src="images/icon_2.png" alt=""></div>
+													<span> 3 Bedrooms</span>
+												</li>
+												<li>
+													<div class="home_details_image"><img src="images/icon_3.png" alt=""></div>
+													<span> 2 Bathrooms</span>
+												</li>
+											</ul>
+										</div>
+										<div class="home_price">$ 1. 245 999</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Home Search -->
+	<div class="home_search">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="home_search_container">
+						<div class="home_search_content">
+							<form action="#" class="search_form d-flex flex-row align-items-start justfy-content-start">
+								<div class="search_form_content d-flex flex-row align-items-start justfy-content-start flex-wrap">
+									<div>
+										<select class="search_form_select">
+											<option disabled selected>Action for</option>
+											<option>Buy</option>
+											<option>Sell</option>
+											<option>Change</option>
+											<option>Rent</option>
+											<option>All</option>
+										</select>
+									</div>
+									<div>
+										<select class="search_form_select">
+											<option disabled selected>Property types</option>
+											<option>Residential</option>
+											<option>Commercial</option>
+											<option>Industrial</option>
+											<option>Rural</option>
+											<option>All</option>
+										</select>
+									</div>
+
+									<div>
+										<select class="search_form_select">
+											<option disabled selected>Property Category</option>
+											<option>chalet and bungalow</option>
+											<option>chalet and bungalow</option>
+											<option>chalet and bungalow</option>
+											<option>chalet and bungalow</option>
+											<option>chalet and bungalow</option>
+											<option>chalet and bungalow</option>
+											<option>chalet and bungalow</option>
+											<option>chalet and bungalow</option>
+											<option>chalet and bungalow</option>
+											<option>All</option>
+										</select>
+									</div>
+									<div>
+										<select class="search_form_select">
+											<option disabled selected>Location</option>
+											<option>New York</option>
+											<option>Paris</option>
+											<option>Amsterdam</option>
+											<option>Rome</option>
+											<option>All</option>
+										</select>
+									</div>
+									 
+									<div>
+										<select class="search_form_select">
+											<option disabled selected>Budget</option>
+											<option>$1000-$1000</option>
+											<option>$1000-$1000</option>
+											<option>$1000-$1000</option>
+											<option>$1000-$1000</option>
+											<option>See all</option>
+										</select>
+									</div>
+								</div>
+								<button class="search_form_button ml-auto">search</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Recent -->
+
+	<div class="recent">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title">Recent Properties</div>
+					<div class="section_subtitle">Search your dream home</div>
+				</div>
+			</div>
+			<div class="row recent_row">
+				<div class="col">
+					<div class="recent_slider_container">
+						<div class="owl-carousel owl-theme recent_slider">
+							
+							<!-- Slide -->
+							<div class="owl-item">
+								<div class="recent_item">
+									<div class="recent_item_inner">
+										<div class="recent_item_image">
+											<img src="images/property_1.jpg" alt="">
+											<div class="tag_featured property_tag"><a href="#">Want to Buy</a></div>
+										</div>
+										<div class="recent_item_body text-center">
+											<div class="recent_item_location">Dhaka</div>
+											<div class="recent_item_title"><a href="property.html">Sea view property</a></div>
+											<div class="recent_item_price">$ 1. 234 981</div>
+										</div>
+										<div class="recent_item_footer d-flex flex-row align-items-center justify-content-start">
+											<div><div class="recent_icon"><img src="images/icon_1.png" alt=""></div><span>650 Ftsq</span></div>
+											<div><div class="recent_icon"><img src="images/icon_2.png" alt=""></div><span>3 Bedrooms</span></div>
+											<div><div class="recent_icon"><img src="images/icon_3.png" alt=""></div><span>3 Bathrooms</span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Slide -->
+							<div class="owl-item">
+								<div class="recent_item">
+									<div class="recent_item_inner">
+										<div class="recent_item_image">
+										<a href="property.html"><img src="images/property_3.jpg" alt=""></a>
+											<div class="tag_offer property_tag"><a href="#">For Sell</a></div>
+										</div>
+										<div class="recent_item_body text-center">
+											<div class="recent_item_location">New York</div>
+											<div class="recent_item_title"><a href="property.html">2 Floor Town House</a></div>
+											<div class="recent_item_price">$ 1. 234 981</div>
+										</div>
+										<div class="recent_item_footer d-flex flex-row align-items-center justify-content-start">
+											<div><div class="recent_icon"><img src="images/icon_1.png" alt=""></div><span>650 Ftsq</span></div>
+											<div><div class="recent_icon"><img src="images/icon_2.png" alt=""></div><span>3 Bedrooms</span></div>
+											<div><div class="recent_icon"><img src="images/icon_3.png" alt=""></div><span>3 Bathrooms</span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="owl-item">
+								<div class="recent_item">
+									<div class="recent_item_inner">
+										<div class="recent_item_image">
+										<a href="property.html"><img src="images/property_1.jpg" alt=""></a>
+											<div class="tag_offer property_tag"><a href="#">For Sell</a></div>
+										</div>
+										<div class="recent_item_body text-center">
+											<div class="recent_item_location">New York</div>
+											<div class="recent_item_title"><a href="property.html">2 Floor Town House</a></div>
+											<div class="recent_item_price">$ 1. 234 981</div>
+										</div>
+										<div class="recent_item_footer d-flex flex-row align-items-center justify-content-start">
+											<div><div class="recent_icon"><img src="images/icon_1.png" alt=""></div><span>650 Ftsq</span></div>
+											<div><div class="recent_icon"><img src="images/icon_2.png" alt=""></div><span>3 Bedrooms</span></div>
+											<div><div class="recent_icon"><img src="images/icon_3.png" alt=""></div><span>3 Bathrooms</span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Slide -->
+							<div class="owl-item">
+								<div class="recent_item">
+									<div class="recent_item_inner">
+										<div class="recent_item_image">
+											<a href="property.html"><img src="images/property_3.jpg" alt=""></a>
+											<div class="tag_featured property_tag"><a href="#">Change</a></div>
+										</div>
+										<div class="recent_item_body text-center">
+											<div class="recent_item_location">Florida</div>
+											<div class="recent_item_title"><a href="property.html">Vacation Home</a></div>
+											<div class="recent_item_price">$ 1. 234 981</div>
+										</div>
+										<div class="recent_item_footer d-flex flex-row align-items-center justify-content-start">
+											<div><div class="recent_icon"><img src="images/icon_1.png" alt=""></div><span>650 Ftsq</span></div>
+											<div><div class="recent_icon"><img src="images/icon_2.png" alt=""></div><span>3 Bedrooms</span></div>
+											<div><div class="recent_icon"><img src="images/icon_3.png" alt=""></div><span>3 Bathrooms</span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="recent_slider_nav_container d-flex flex-row align-items-start justify-content-start">
+							<div class="recent_slider_nav recent_slider_prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+							<div class="recent_slider_nav recent_slider_next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+						</div>
+					</div>
+					<div class="button recent_button"><a href="properties.html">see more</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cities -->
+
+	<div class="cities">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title">Find properties in these cities</div>
+					<div class="section_subtitle">Search your dream home</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="cities_container d-flex flex-row flex-wrap align-items-start justify-content-between">
+
+			<!-- City -->
+			<div class="city">
+				<img src="images/city_1.jpg" alt="https://unsplash.com/@dnevozhai">
+				<div class="city_overlay">
+					<a href="#" class="d-flex flex-column align-items-center justify-content-center">
+						<div class="city_title">New York</div>
+						 
+					</a>	
+				</div>
+			</div>
+
+			<!-- City -->
+			<div class="city">
+				<img src="images/city_2.jpg" alt="https://unsplash.com/@lachlanjdempsey">
+				<div class="city_overlay">
+					<a href="#" class="d-flex flex-column align-items-center justify-content-center">
+						<div class="city_title">Paris</div>
+						 
+					</a>	
+				</div>
+			</div>
+
+			<!-- City -->
+			<div class="city">
+				<img src="images/city_3.jpg" alt="https://unsplash.com/@hellolightbulb">
+				<div class="city_overlay">
+					<a href="#" class="d-flex flex-column align-items-center justify-content-center">
+						<div class="city_title">London</div>
+						 
+					</a>	
+				</div>
+			</div>
+
+			<!-- City -->
+			<div class="city">
+				<img src="images/city_4.jpg" alt="https://unsplash.com/@justinbissonbeck">
+				<div class="city_overlay">
+					<a href="#" class="d-flex flex-column align-items-center justify-content-center">
+						<div class="city_title">Dhaka</div>
+						
+					</a>	
+				</div>
+			</div>
+
+			<!-- City -->
+			<div class="city">
+				<img src="images/city_5.jpg" alt="https://unsplash.com/@claudiotrigueros">
+				<div class="city_overlay">
+					<a href="#" class="d-flex flex-column align-items-center justify-content-center">
+						<div class="city_title">Barlin</div>
+					 
+					</a>	
+				</div>
+			</div>
+
+			<!-- City -->
+			<div class="city">
+				<img src="images/city_6.jpg" alt="https://unsplash.com/@andersjilden">
+				<div class="city_overlay">
+					<a href="#" class="d-flex flex-column align-items-center justify-content-center">
+						<div class="city_title">San francisco</div>
+						 
+					</a>	
+				</div>
+			</div>
+
+			<!-- City -->
+			<div class="city">
+				<img src="images/city_7.jpg" alt="https://unsplash.com/@sawyerbengtson">
+				<div class="city_overlay">
+					<a href="#" class="d-flex flex-column align-items-center justify-content-center">
+						<div class="city_title">Los angel</div>
+						 
+					</a>	
+				</div>
+			</div>
+
+			<!-- City -->
+			<div class="city">
+				<img src="images/city_8.jpg" alt="https://unsplash.com/@mathewwaters">
+				<div class="city_overlay">
+					<a href="#" class="d-flex flex-column align-items-center justify-content-center">
+						<div class="city_title">Ibiza Town</div>
+						 <div class="city_subtitle">Rentals from $450/month</div>
+					</a>	
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Real Estators and Agents -->
+	<div class="recent">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title">Recent RealEstators</div>
+					<div class="section_subtitle">Search your dream home</div>
+				</div>
+			</div>
+			<div class="row recent_row">
+				<div class="col">
+					<div class="recent_slider_container">
+						<div class="owl-carousel owl-theme recent_slider">
+							
+							<!-- Slide -->
+							<div class="owl-item">
+								<div class="recent_item">
+									<div class="recent_item_inner">
+										<div class="recent_item_image">
+											<img src="realestator_img/rahi2.jpg" alt="">
+ 										</div>
+										<div class="recent_item_body text-center">
+											
+											<div class="recent_item_title"><a href="property.html">Rahi Chowdory</a></div>
+											<div class="recent_item_location">Agents</div>
+										</div>
+										<div class="recent_item_footer d-flex flex-row align-items-center justify-content-start">
+											 
+											<div> <span>Details</span></div>
+											 
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Slide -->
+								<div class="owl-item">
+								<div class="recent_item">
+									<div class="recent_item_inner">
+										<div class="recent_item_image">
+											<img src="realestator_img/rahi3.jpg" alt="">
+ 										</div>
+										<div class="recent_item_body text-center">
+											
+											<div class="recent_item_title"><a href="property.html">Rahi Chowdory</a></div>
+											<div class="recent_item_location">Agents</div>
+										</div>
+										<div class="recent_item_footer d-flex flex-row align-items-center justify-content-start">
+											 
+											<div> <span>Details</span></div>
+											 
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+								<div class="owl-item">
+								<div class="recent_item">
+									<div class="recent_item_inner">
+										<div class="recent_item_image">
+											<img src="realestator_img/rahi3.jpg" alt="">
+ 										</div>
+										<div class="recent_item_body text-center">
+											
+											<div class="recent_item_title"><a href="property.html">Rahi Chowdory</a></div>
+											<div class="recent_item_location">Agents</div>
+										</div>
+										<div class="recent_item_footer d-flex flex-row align-items-center justify-content-start">
+											 
+											<div> <span>Details</span></div>
+											 
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Slide -->
+								<div class="owl-item">
+								<div class="recent_item">
+									<div class="recent_item_inner">
+										<div class="recent_item_image">
+											<img src="realestator_img/rahi4.jpg" alt="">
+ 										</div>
+										<div class="recent_item_body text-center">
+											
+											<div class="recent_item_title"><a href="property.html">Imran Hasan</a></div>
+											<div class="recent_item_location">Realestators</div>
+										</div>
+										<div class="recent_item_footer d-flex flex-row align-items-center justify-content-start">
+											 
+											<div> <span>Details</span></div>
+											 
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="recent_slider_nav_container d-flex flex-row align-items-start justify-content-start">
+							<div class="recent_slider_nav recent_slider_prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+							<div class="recent_slider_nav recent_slider_next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+						</div>
+					</div>
+					<div class="button recent_button"><a href="realestators.html">see more</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="footer_main">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="footer_logo"><a href="#"><img height="50" width="150" src="images/immo.png" alt=""></a></div>
+					</div>
+					<div class="col-lg-9 d-flex flex-column align-items-start justify-content-end">
+						<div class="footer_title">Top Rated Properties</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 footer_col">
+						<div class="footer_about">
+							<div class="footer_about_text"><span>Are you looking for Buy,Sell,Rent or Make Change Property?
+								Then You are in the right Place, <strong>Immolists</strong> is trasted property sharing media,It will help you to find or sell your Dream House</span></div>
+						</div>
+					</div>
+					<div class="col-lg-3 footer_col">
+						<div class="footer_latest d-flex flex-row align-items-start justify-content-start">
+							<div><div class="footer_latest_image"><img src="images/footer_latest_1.jpg" alt=""></div></div>
+							<div class="footer_latest_content">
+								<div class="footer_latest_location">Miami</div>
+								<div class="footer_latest_name"><a href="#">Sea view property</a></div>
+								<div class="footer_latest_price">$ 1. 234 981</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 footer_col">
+						<div class="footer_latest d-flex flex-row align-items-start justify-content-start">
+							<div><div class="footer_latest_image"><img src="images/footer_latest_2.jpg" alt=""></div></div>
+							<div class="footer_latest_content">
+								<div class="footer_latest_location">Miami</div>
+								<div class="footer_latest_name"><a href="#">Town House</a></div>
+								<div class="footer_latest_price">$ 1. 234 981</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 footer_col">
+						<div class="footer_latest d-flex flex-row align-items-start justify-content-start">
+							<div><div class="footer_latest_image"><img src="images/footer_latest_3.jpg" alt=""></div></div>
+							<div class="footer_latest_content">
+								<div class="footer_latest_location">Miami</div>
+								<div class="footer_latest_name"><a href="#">Modern House</a></div>
+								<div class="footer_latest_price">$ 1. 234 981</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_bar">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="footer_bar_content d-flex flex-row align-items-center justify-content-start" style="">
+							<div class="cr"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Immolists</i> <br>Developed by <a href="https://colorlib.com" target="_blank">IceCream Software</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</div>
+							<div class="footer_nav">
+								 Privacy policy | Terms & conditions | Contact Us
+
+							</div>
+							<div class="footer_phone ml-auto"><span>Helpline: </span>652 345 3222 11</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
